@@ -1,0 +1,16 @@
+.btn-default {
+  background-color: $blue-default;
+  border: 0;
+  color: #fff;
+  font-size: 24px;
+  font-family: $font-default;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 20px 40px;
+  display: inline-block;
+
+  @include breakpoint-xs {
+    font-size: 17px;
+  }
+}

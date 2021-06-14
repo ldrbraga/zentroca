@@ -1,0 +1,210 @@
+.zentroca-appraisal {
+  padding: 50px 0;
+
+  .container {
+    display: flex;
+
+    @include breakpoint-xs {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    width: 40%;
+    margin-right: 84px;
+
+    @include breakpoint-xs {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__description {
+      > h3 {
+        font-family: $font-default;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 34px;
+
+        @include breakpoint-xs {
+          padding: 0 26px;
+          text-align: center;
+        }
+      }
+
+      > p {
+        font-family: $font-default;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 20px 0;
+
+        @include breakpoint-xs {
+          padding: 0 26px;
+          text-align: center;
+        }
+      }
+
+      &__list {
+        display: flex;
+        background-color: #f9f9f9;
+        padding: 34px;
+        margin-bottom: 56px;
+
+        &__img {
+          background-image: url("/assets/images/touch.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 130px;
+          height: 130px;
+
+          @include breakpoint-xs {
+            width: 210px;
+          }
+        }
+
+        &__infos {
+          margin-left: 17px;
+
+          > p {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  &__form {
+    width: 60%;
+
+    @include breakpoint-xs {
+      width: 100%;
+    }
+
+    > h3 {
+      font-family: $font-default;
+      font-size: 24px;
+      font-weight: 700;
+
+      @include breakpoint-xs {
+        text-align: center;
+      }
+    }
+
+    &__elements {
+        &--select {
+          display: flex;
+          flex-direction: column;
+
+          @include breakpoint-xs {
+            padding: 0 26px;
+          }
+          
+          > select {
+            margin-bottom: 28px;
+            padding: 12px 22px;
+            border: 1px solid #52A6FF;
+            background-color: transparent;
+            outline: none;
+            color: #A3A0A0;
+
+            &:first-child {
+              margin-top: 28px;
+            }
+          }
+        }
+
+        &--checkbox {
+          display: flex;
+          justify-content: space-between;
+
+          @include breakpoint-xs {
+            flex-direction: column;
+            padding: 0 26px;
+          }
+
+          > div {
+            > label {
+              font-family: $font-default;
+              font-size: 20px;
+              font-weight: 700;
+            }
+
+            > p {
+              font-size: 12px;
+              max-width: 184px;
+              line-height: 15px;
+              margin: 5px 0 0 25px;
+
+              @include breakpoint-xs {
+                margin-bottom: 24px;
+                max-width: 100%;
+              }
+    
+            }
+          }
+        }
+    }
+  }
+
+  &__result {
+    width: 100%;
+    margin-top: 34px; 
+    border-radius: 10px;
+
+    &__finalprice {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #F9F9F9;
+      padding: 28px;
+
+      @include breakpoint-xs {
+        flex-direction: column;
+      }
+
+      > p {
+        font-size: 20px;
+        max-width: 390px;
+        line-height: 26px;
+
+        @include breakpoint-xs {
+          text-align: center;
+        }
+
+      }
+
+      > span {
+        font-size: 48px;
+        font-weight: 600;
+        color: $blue-default;
+
+        @include breakpoint-xs {
+          margin: 24px 0;
+        }
+
+      }
+    }
+
+    &__info {
+      margin: 14px 0 34px;
+
+      > p {
+        text-align: center;
+        color: $blue-default;
+        font-style: italic;
+        font-size: 14px;
+
+        @include breakpoint-xs {
+          padding: 0 26px;
+        }
+
+      }
+    }
+
+    &__btn {
+      text-align: center;
+    }
+  }
+}
