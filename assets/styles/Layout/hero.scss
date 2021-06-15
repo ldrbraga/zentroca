@@ -1,13 +1,27 @@
 .zentroca-hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #000;
-  min-height: 600px;
+  background-image: url("/assets/images/bg-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 865px;
   width: 100%;
+  margin-top: -132px;
 
-  > h1 {
-    color: #fff;
+  @include breakpoint-xs {
+    background-image: url("/assets/images/bg-hero-mobal.png");
+    min-height: 741px;
+  }
+
+  > a {
+    position: absolute;
+    bottom: 64px;
+
+    @include breakpoint-xs {
+      bottom: 16px;
+    }
   }
 }

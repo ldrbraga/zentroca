@@ -1,0 +1,1 @@
+"use strict";$("input:checkbox").on("click",function(){var c=$(this);if(c.is(":checked")){var e="input:checkbox[name='"+c.attr("name")+"']";$(e).prop("checked",!1),c.prop("checked",!0)}else c.prop("checked",!1)});
