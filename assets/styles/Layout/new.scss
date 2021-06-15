@@ -1,0 +1,169 @@
+.zentroca-new {
+  background-image: url("/assets/images/bg-new.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  &__box {
+    display: flex;
+    padding: 73px 0;
+
+    @include breakpoint-xs {
+      flex-direction: column;
+    }
+
+    &__title {
+      @include breakpoint-xs {
+        padding: 0 26px;
+      }
+
+      > h3 {
+        width: 245px;
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 700;
+        margin-bottom: 28px;
+
+        @include breakpoint-xs {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      > p {
+        width: 245px;
+        line-height: 25px;
+
+        @include breakpoint-xs {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &__content {
+      padding-left: 82px;
+
+      @include breakpoint-xs {
+        padding-left: 0;
+      }
+
+      &__links {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 5px;
+        padding-left: 30px;
+        text-align: center;
+        width: 836px;
+
+        @include breakpoint-xs {
+          width: 100%;
+          padding-left: 0;
+          padding-top: 30px;
+        }
+
+        > a {
+          font-size: 20px;
+          padding: 0 40px;
+          font-weight: 700;
+          color: #fff;
+          width: 244px;
+          text-decoration: none;
+  
+          @include breakpoint-xs {
+            width: 100%;
+            padding: 0 9px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__form {
+        display: none;
+      }
+
+      &__result {
+        @include breakpoint-xs {
+          padding: 0 26px;
+        }
+
+        &__select {
+          padding: 44px 0;
+
+          @include breakpoint-xs {
+            padding: 30px 0; 
+          }
+
+          > select {
+            width: 414px;
+            padding: 12px 18px;
+            color: #A3A0A0;
+            margin-right: 35px;
+
+            @include breakpoint-xs {
+              width: 100%;
+              margin-right: 0;
+              margin-bottom: 24px;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+
+        > ul {
+          display: flex;
+          flex-wrap: wrap;
+
+          > li {
+            width: 28%;
+            margin-right: 40px;
+            margin-bottom: 20px;
+
+            @include breakpoint-xs {
+              width: 100%;
+            }
+
+            > p {
+              line-height: 24px;
+
+              &:first-child {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    padding-bottom: 60px;
+
+    @include breakpoint-xs {
+      display: none;
+    }
+
+    &__message {
+      background-color: $blue-default;
+      border-radius: 10px;
+      text-align: center;
+      padding: 30px 0;
+
+      > p {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+
+    &__obs {
+      > p {
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}
