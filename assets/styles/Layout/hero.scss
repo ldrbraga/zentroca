@@ -1,8 +1,7 @@
 .zentroca-hero {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  // justify-content: center;
   flex-direction: column;
   background-image: url("/assets/images/bg-hero.png");
   background-repeat: no-repeat;
@@ -13,15 +12,94 @@
 
   @include breakpoint-xs {
     background-image: url("/assets/images/bg-hero-mobal.png");
-    min-height: 741px;
+    min-height: 860px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 132px;
+    padding-top: 136px;
+
+    @include breakpoint-xs {
+      flex-direction: column;
+      padding-top: 0;
+    }
+
+    &__logo {
+      > h1 {
+        @include breakpoint-xs {
+          text-align: center;
+          padding-top: 20px;
+        }
+
+        > img {
+          @include breakpoint-xs {
+            height: 186px;
+            width: 277px;
+          }
+        }
+      }
+
+      > h2 {
+        color: $blue-default;
+        width: 434px;
+        line-height: 36px;
+        font-size: 30px;
+        margin-top: 58px;
+        text-align: center;
+
+        @include breakpoint-xs {
+          width: 100%;
+          font-size: 24px;
+          margin-top: 0;
+          padding: 22px 0;
+        }
+
+        > strong {
+          font-weight: bold;
+        }
+      }
+    }
+
+    &__devices {
+      > p { 
+        color: #fff;
+        line-height: 24px;
+
+        @include breakpoint-xs {
+          display: none;
+        }
+
+        > strong {
+          font-weight: 700;
+        }
+      }
+
+      > img {
+        @include breakpoint-xs {
+          height: 250px;
+          width: 242px;
+        }
+      }
+    }
   }
 
   > a {
     position: absolute;
     bottom: 64px;
+    left: calc(50% - 150px);
 
     @include breakpoint-xs {
-      bottom: 16px;
+      bottom: 12px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      display: inline-block;
+      width: 230px;
     }
   }
 }
