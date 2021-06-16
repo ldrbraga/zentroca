@@ -42,6 +42,10 @@
         font-size: 48px;
         font-weight: 600;
 
+        @include breakpoint-xs {
+          padding: 0 26px;
+        }
+
         > strong {
           font-weight: bold;
         }
